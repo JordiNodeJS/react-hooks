@@ -1,7 +1,11 @@
+import useCounter from '../../hooks/useCounter'
 import useFetch from '../../hooks/useFetch'
 import './MultipleCustomHooks.css'
 const MultipleCustomHooks = () => {
   const url = 'https://breakingbadapi.com/api/quotes/1'
+
+  useCounter(1)
+
   const { data } = useFetch(`${url}`)
 
   const { quote, author } = !!data && data[0]
