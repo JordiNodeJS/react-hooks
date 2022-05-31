@@ -1,9 +1,12 @@
 import { useRef } from 'react'
 
 const FocusScreen = () => {
+  
   const inputRef = useRef()
   console.log(inputRef);
+
   const handleClick = _ => inputRef.current.select()
+
   return (
     <div
       style={{
