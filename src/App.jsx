@@ -1,10 +1,10 @@
 import "./App.css"
-import FocusScreen from "./components/useRef/FocusScreen"
+import RealExampleRef from "./components/useRef/RealExampleRef"
 
 export default function App() {
   return (
     <>
-     <FocusScreen />
+     <RealExampleRef />
     </>
   )
 }

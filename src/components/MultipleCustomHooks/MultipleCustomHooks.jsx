@@ -1,6 +1,7 @@
 import useCounter from '../../hooks/useCounter'
 import useFetch from '../../hooks/useFetch'
 import './MultipleCustomHooks.css'
+
 const MultipleCustomHooks = () => {
   const url = 'https://breakingbadapi.com/api/quotes/'
 
@@ -15,15 +16,15 @@ const MultipleCustomHooks = () => {
     <>
       <h1>Breaking Bad Api</h1>
       <hr />
-      {loading ? (
+      {loading ? 
         <p className='alert alert-info text-center'>Loading...</p>
-      ) : (
+      : 
         <section>
           <main className='text-end'>
             <blockquote className='blockquote'>{quote}</blockquote>
           </main>
           <footer className='blockquote-footer text-end'>
-            <cite>{author}</cite>
+            <cite className='text-info'>{author}</cite>
           </footer>
           <button
             onClick={increment}
@@ -33,7 +34,7 @@ const MultipleCustomHooks = () => {
             Siguiente Cita
           </button>
         </section>
-      )}
+}
     </>
   )
 }
