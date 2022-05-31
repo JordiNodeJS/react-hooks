@@ -1,10 +1,10 @@
 import "./App.css"
-import MultipleCustomHooks from "./components/MultipleCustomHooks/MultipleCustomHooks"
+import FocusScreen from "./components/useRef/FocusScreen"
 
 export default function App() {
   return (
     <>
-     <MultipleCustomHooks />
+     <FocusScreen />
     </>
   )
 }
