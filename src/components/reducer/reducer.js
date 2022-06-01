@@ -6,16 +6,8 @@ const initialState = [
   },
 ]
 
-const todoReducer = (state = initialState, action) => {
-
-    // action?.type === 'add' ?  [...state, action.payload] :  state
-
-  if (action?.type === 'add') {
-    return [...state, action.payload]
-  }
-  return state
-
-}
+const todoReducer = (state = initialState, action) =>
+  action?.type === 'add' ? [...state, action.payload] : state
 
 const todo_1 = {
   id: 2,

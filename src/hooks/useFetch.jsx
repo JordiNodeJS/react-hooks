@@ -6,9 +6,8 @@ const useFetch = url => {
   const [state, setState] = useState({ data: null, loading: true, error: null })
 
   useEffect(() => {
-    return () => {
-      isMounted.current = false
-    }
+    return () =>  isMounted.current = false
+    
   }, [])
 
   useEffect(() => {
