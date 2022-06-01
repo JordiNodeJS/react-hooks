@@ -8,12 +8,12 @@ const initialState = [
 
 const todoReducer = (state = initialState, action) => {
 
-    action?.type === 'add' ?  [...state, action.payload] :  state
+    // action?.type === 'add' ?  [...state, action.payload] :  state
 
-//   if (action?.type === 'add') {
-//     return [...state, action.payload]
-//   }
-//   return state
+  if (action?.type === 'add') {
+    return [...state, action.payload]
+  }
+  return state
 
 }
 
